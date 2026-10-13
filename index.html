@@ -5,32 +5,39 @@
     <title>創作</title>
     <link rel="icon" href="img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Serif+JP:wght@200..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header id="header" class="header wrapper">
-        <div class="header__container container">
-            <div class="header__logo">
-                <h1><a href="#"><img src="img/logo.svg" alt="創作"></a></h1>
+        <div class="header__container container container--full-wide">
+            <div class="header__content header__content--right">
+                <div class="header__logo">
+                    <h1><a href="#"><img src="img/logo.svg" alt="創作"></a></h1>
+                </div>
+                <nav class="header__global-nav global-nav vertical-text">
+                    <ul>
+                        <li><a href="#news">お知らせ</a></li>
+                        <li><a href="#about">商品のご紹介</a></li>
+                        <li><a href="#access">店舗のご案内</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="header__global-nav global-nav vertical-text">
-                <ul>
-                    <li><a href="#news">お知らせ</a></li>
-                    <li><a href="#about">商品のご紹介</a></li>
-                    <li><a href="#access">店舗のご案内</a></li>
-                </ul>
-            </nav>
-            <div class="header__button  vertical-text">
-                <a href="#">オンラインストアを見る</a>
+            <div class="header__content header__content--left">
+                <div class="header__button  vertical-text">
+                    <a href="#">オンラインストアを見る</a>
+                </div>
             </div>
         </div>
     </header>
 
     <section id="news" class="news wrapper">
-        <div class="news__container container">
+        <div class="news__container container container--limited-wide">
             <div class="news__section-header section-header section-header--side vertical-text">
-                <h2 class="section-header__title section-header__title">お知らせ</h2>
-                <span class="section-header__subtitle section-header__subtitle">News</span>
+                <h2 class="section-header__title">お知らせ</h2>
+                <span class="section-header__subtitle">News</span>
             </div>
             <div class="news__list vertical-text">
                 <ul>
@@ -60,9 +67,9 @@
     </section>
 
     <section id="about" class="about wrapper">
-        <div class="about__container container">
-            <div class="about__flex-container flex-container--rl">
-                <div class="about__section-header section-header section-header vertical-text">
+        <div class="about__container container container--limited-wide">
+            <div class="about__flex-container about__flex-container--rl">
+                <div class="about__section-header section-header section-header--vertical vertical-text">
                     <h2 class="section-header__title">新しい価値の創造</h2>
                     <span class="section-header__subtitle">Create New value</span>
                 </div>
@@ -70,13 +77,13 @@
                     <div class="about__content-image content-image">
                         <img src="img/products1.jpg" alt="product1">
                     </div>
-                    <div class="about__content-text content-text content-text--yellow">
-                        <p>テキストテキストテキストテキスト</p>
+                    <div class="about__content-text  about__content-text--yellow">
+                        <p>テキストテキスト<br>テキストテキスト</p>
                     </div>
                 </div>
             </div>
-            <div class="about__flex-container flex-container--lr">
-                <div class="about__section-header section-header section-header vertical-text">
+            <div class="about__flex-container about__flex-container--lr">
+                <div class="about__section-header section-header section-header--vertical vertical-text">
                     <h2 class="section-header__title">科学と技術の調和</h2>
                     <span class="section-header__subtitle">Science & Technology</span>
                 </div>
@@ -84,8 +91,8 @@
                     <div class="about__content-image content-image">
                         <img src="img/products2.jpg" alt="product2">
                     </div>
-                    <div class="about__content-text content-text content-text--red">
-                        <p>テキストテキストテキストテキスト</p>
+                    <div class="about__content-text about__content-text--red">
+                        <p>テキストテキスト<br>テキストテキスト</p>
                     </div>
                 </div>
             </div>
@@ -93,34 +100,36 @@
     </section>
 
     <section id="access" class="access wrapper">
-        <div class="access__container">
+        <div class="access__container container container--full-wide">
             <div class="access__google-map google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6831613967106!2d139.73286700102722!3d35.66017708010212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9c2ef8e6c3%3A0xff8de5eeddcd1e17!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yV5LiB55uu!5e0!3m2!1sja!2sjp!4v1622980739129!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
     <footer id="footer" class="footer wrapper">
-        <div class="footer__container container">
+        <div class="footer__container container container--limited-wide">
             <div class="footer__content footer__content--right">
                 <div class="footer__logo">
                     <img src="img/logo.svg" alt="創作">
                 </div>
-                <address class="footer__info vertical-text">
-                    <p>&#12306;106-0032 東京都港区六本木５丁目×××××</p>
-                    <p>電話： 03-xxxx-xxxx</p>
+                <address class="footer__info vertical-text vertical-text--upright">
+                    <p>&#12306;１０６<span>－</span>００３２ 東京都港区六本木５丁目ｘｘｘｘｘ</p>
+                    <p>電話： ０３<span>－</span>ｘｘｘｘ<span>－</span>ｘｘｘｘ</p>
                 </address>
                 <nav class="footer__global-nav global-nav vertical-text">
                     <ul>
-                        <li><a href="#news">お知らせ</a></li>
-                        <li><a href="#about">商品のご紹介</a></li>
-                        <li><a href="#access">店舗のご案内</a></li>
+                        <li class="footer__nav-item"><a href="#news">お知らせ</a></li>
+                        <li class="footer__nav-item"><a href="#about">商品のご紹介</a></li>
+                        <li class="footer__nav-item"><a href="#access">店舗のご案内</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="footer__content footer__content--left">
+            <div class="footer__content footer__content--left vertical-text">
                 <div class="footer__link">
                     <a href="#">オンラインストアで見る</a>
                 </div>
+                <div class="footer__border"></div>
                 <div class="footer__contact">
                     <a href="#">お問い合わせ</a>
                 </div>
